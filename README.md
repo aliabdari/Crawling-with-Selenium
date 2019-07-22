@@ -25,11 +25,11 @@ driver.get(URL)
 3) wait function<br/>
 Some web sites use ajax to loading different data on the web page. In these cases, all of the data are not accessible as the first time that the web page is opened in a browser. Some data will be load little by little over time. In this situation, we do not have any solution just to wait for that data to become visible!!!!<br/>
 We have two types of waiting in selenium:<br/>
-I : implicitly wait<br/>
+..1 : implicitly wait<br/>
 ```
 driver.implicitly_wait(5)
 ```
-II : explicitly wait (waiting that an element become visible)<br/>
+..2 : explicitly wait (waiting that an element become visible)<br/>
 ```
 WebDriverWait wait = new WebDriverWait(driver, 10);
 WebElement element = wait.until(
