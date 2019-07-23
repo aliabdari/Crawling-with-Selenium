@@ -36,3 +36,42 @@ WebElement element = wait.until(
         ExpectedConditions.visibilityOfElementLocated(By.id("someid")));
 ```
 
+4) find element or elements<br/>
+If you want to access a single element, you should use find_element_by_... functions. On the other hand, if you wanna access to some element with a common feature you should use find_elements_by_... functions.<br/>
+You can access an element in many ways like id, xpath and ...<br/>
+here you can see some functions.
+
+* single element:<br/>
+```
+find_element_by_id
+find_element_by_name
+find_element_by_xpath
+find_element_by_link_text
+find_element_by_partial_link_text
+find_element_by_tag_name
+find_element_by_class_name
+find_element_by_css_selector
+```
+
+* multiple elements:<br/>
+```
+find_elements_by_name
+find_elements_by_xpath
+find_elements_by_link_text
+find_elements_by_partial_link_text
+find_elements_by_tag_name
+find_elements_by_class_name
+find_elements_by_css_selector
+```
+For using this functions we can write something like:<br/>
+```
+driver.find_element_by_xpath('//[@id="sideColumn2"]/div/img').get_attribute('src')
+or
+login_form = driver.find_element_by_id('loginForm')
+or
+username = driver.find_element_by_name('username')
+```
+we can acheive to xpath simply by using the inspect of our bowser. It seems that xpath is the most reliable way to achieve an element fast.<br/>
+Notice to do not use find_element_by_... functions and find_elements_by_... instead of each other incorrectly.
+
+For more explanations, you can use [link](https://selenium-python.readthedocs.io/locating-elements.html)
