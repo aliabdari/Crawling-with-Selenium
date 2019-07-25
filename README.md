@@ -71,7 +71,8 @@ login_form = driver.find_element_by_id('loginForm')
 or
 username = driver.find_element_by_name('username')
 ```
-we can acheive to xpath simply by using the inspect of our bowser. It seems that xpath is the most reliable way to achieve an element fast.<br/>
+#### Notice
+We can achieve to XPath by merely using the inspect of our bowser. It seems that XPath is the most reliable way to achieve an element fast.<br/>
 Notice to do not use find_element_by_... functions and find_elements_by_... instead of each other incorrectly.
 
-For more explanations, you can use [link](https://selenium-python.readthedocs.io/locating-elements.html)
+#### For more explanations, you can use the [link](https://selenium-python.readthedocs.io/locating-elements.html)
