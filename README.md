@@ -72,7 +72,8 @@ or
 username = driver.find_element_by_name('username')
 ```
 #### Notice
-We can achieve to XPath by merely using the inspect of our bowser. It seems that XPath is the most reliable way to achieve an element fast.<br/>
+* Implicit wait is more reliable than explicit wait.<br/>
+* We can achieve to XPath by merely using the inspect of our bowser. It seems that XPath is the most reliable way to achieve an element fast.<br/>
 Notice to do not use find_element_by_... functions and find_elements_by_... instead of each other incorrectly.
 
 #### For more explanations, you can use the [link](https://selenium-python.readthedocs.io/locating-elements.html)
